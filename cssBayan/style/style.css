@@ -18,14 +18,9 @@ body {
     padding-right: 2rem;
     max-width: 52rem;
     margin: 0 auto;
-    cursor: pointer;
 }
 
-label, span {
-    display: block;
-}
-
-img {
+label, span, img {
     display: block;
 }
 
@@ -36,6 +31,10 @@ img {
 
 input {
     display: none;
+}
+
+.accordion * {
+    cursor: pointer;
 }
 
 .line {
@@ -63,7 +62,9 @@ input {
 .title__mem {
     color: #0059d9;
 }
-
+input:checked ~ .title__mem {
+    color: #010201;
+}
 .mem:hover .title__mem {
     background: #f5f5eb url(../images/close.png) no-repeat right;
 }

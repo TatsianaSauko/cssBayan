@@ -61,10 +61,13 @@ input {
 .title__mem {
     color: #0059d9;
 }
-input:checked ~ .title__mem {
+
+.mem input:checked ~ .title__mem {
     color: #010201;
+    background: #f5f5eb url(../images/close.png) no-repeat right;
 }
-.mem:hover .title__mem {
+
+.mem:hover .title__mem{
     background: #f5f5eb url(../images/close.png) no-repeat right;
 }
 

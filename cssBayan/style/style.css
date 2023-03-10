@@ -8,7 +8,7 @@ body {
     overflow-x: hidden;
     font-weight: 600;
     font-size: 1.5rem;
-    color: #000000;
+    color: #010201;
     height: 100%;
     background-color: #f5f5eb;
 }
@@ -38,7 +38,7 @@ input {
 }
 
 .line {
-    border-bottom: 1px solid #e3e6e6;
+    border-bottom: 0.1rem solid #e3e6e6;
 }
 
 .container:hover .title__mem {
@@ -53,7 +53,6 @@ input {
 }
 
 .mem:hover .image, input:checked ~ .image {
-
     padding-bottom: 0.8rem;
     height: 18rem;
     transition: height 0.8s ease-in;

@@ -59,6 +59,7 @@ input {
     height: 18rem;
     transition: height 0.8s ease-in;
 }
+
 .title__mem {
     color: #0059d9;
 }
@@ -72,6 +73,7 @@ input {
         font-size: 0.9rem;
     }
 }
+
 @media screen and (max-width: 320px) {
     html {
         font-size: 0.7rem;

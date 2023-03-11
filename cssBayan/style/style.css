@@ -59,12 +59,16 @@ input {
 }
 
 .title__mem {
+    padding-right: 2rem;
     color: #0059d9;
+}
+.container:hover .mem input:checked ~ .title__mem{
+    background: #f5f5eb url(../images/close.png) no-repeat right;
 }
 
 .mem input:checked ~ .title__mem {
     color: #010201;
-    background: #f5f5eb url(../images/close.png) no-repeat right;
+    /*background: #f5f5eb url(../images/close.png) no-repeat right;*/
 }
 
 .mem:hover .title__mem{

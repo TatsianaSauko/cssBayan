@@ -1,0 +1,88 @@
+html {
+    font-family: 'Tilt Warp', cursive;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+    overflow-x: hidden;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #010201;
+    height: 100%;
+    background-color: #f5f5eb;
+}
+
+.container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 52rem;
+    margin: 0 auto;
+}
+
+label, span, img {
+    display: block;
+}
+
+.mem {
+    padding-bottom: 0.8rem;
+    padding-top: 0.8rem;
+}
+
+input {
+    display: none;
+}
+
+.accordion * {
+    cursor: pointer;
+}
+
+.line {
+    border-bottom: 0.1rem solid #e3e6e6;
+}
+
+.container:hover .title__mem {
+    color: #010201;
+    background: #f5f5eb url(../images/open.png) no-repeat right;
+}
+
+.image {
+    margin: auto;
+    height: 0;
+    transition: height 0.8s ease-out;
+}
+
+.mem:hover .image, input:checked ~ .image {
+    padding-bottom: 0.8rem;
+    height: 18rem;
+    transition: height 0.8s ease-in;
+}
+
+.title__mem {
+    padding-right: 2rem;
+    color: #0059d9;
+}
+.container:hover .mem input:checked ~ .title__mem{
+    background: #f5f5eb url(../images/close.png) no-repeat right;
+}
+
+.mem input:checked ~ .title__mem {
+    color: #010201;
+    /*background: #f5f5eb url(../images/close.png) no-repeat right;*/
+}
+
+.mem:hover .title__mem{
+    background: #f5f5eb url(../images/close.png) no-repeat right;
+}
+
+@media screen and (max-width: 820px) {
+    html {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    html {
+        font-size: 0.7rem;
+    }
+}
